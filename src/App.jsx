@@ -1,9 +1,11 @@
 import React from "react";
 import Login from "./Components/Login";
+import VerifyMail from "./Components/VerifyMail";
 const App = () => {
   return (
     <div>
-      <Login />
+      <VerifyMail />
+      {/* <Login /> */}
     </div>
   );
 };
