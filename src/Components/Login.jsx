@@ -17,8 +17,8 @@ const Login = () => {
           </div>
           {/**text */}
           <div className="flex items-center gap-4">
-            <p className="font-medium">Here to hire a talent?</p>
-            <p className="text-green-600">Join as a Client</p>
+            <p className="font-medium cursor-pointer">Here to hire a talent?</p>
+            <p className="text-green-600 cursor-pointer">Join as a Client</p>
           </div>
         </div>
       </nav>
@@ -185,7 +185,7 @@ const Login = () => {
               <div className="mt-5 text-center">
                 <p className="">
                   Already have an account?{" "}
-                  <span className="text-green-600">Log In</span>
+                  <span className="text-green-600 cursor-pointer">Log In</span>
                 </p>
               </div>
             </div>
@@ -194,7 +194,7 @@ const Login = () => {
       </main>
       {/**footer */}
       <footer>
-        <div className="bg-black w-full flex justify-between px-10 py-5 ">
+        <div className="bg-neutral-800 w-full flex justify-between px-10 py-5 ">
           {/**upwork */}
           <div className="flex gap-2">
             <div className="bg-white rounded-md flex justify-center items-center w-8  h-7 ">

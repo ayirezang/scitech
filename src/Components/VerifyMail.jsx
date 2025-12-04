@@ -13,7 +13,7 @@ import { FaUpwork } from "react-icons/fa6";
 
 const VerifyMail = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen ">
       {/**navbar */}
       <nav className="flex justify-between items-center pl-4 pr-4">
         {/**upwork logo */}
@@ -28,8 +28,11 @@ const VerifyMail = () => {
       {/**main section */}
       <main>
         <div className="flex flex-col justify-center items-center ">
-          <div className="">
-            <img src={email} alt="email" />
+          <div className="relative">
+            <div className="">
+              <img src={email} alt="email" />
+            </div>
+            <div className="absolute -top-1 -right-2 w-8 h-8 bg-pink-400 rounded-full"></div>
           </div>
           <p className="mt-4 text-3xl text-black font-bold">
             Verify your email to continue
@@ -53,85 +56,117 @@ const VerifyMail = () => {
         </div>
       </main>
       {/*footer*/}
-      <footer className="mt-10 p-10 ">
-        <div className="bg-black text-white w-full py-10 rounded-md">
-          <div className="flex justify-evenly p-5 gap-6 text-sm text-gray-300">
-            <div className="flex flex-col gap-3 text-gray-200">
-              <p>About Us</p>
-              <p>Feedback</p>
-              <p>Trust, Safety & Security</p>
+      <footer className="bg-gray-950 text-white mt-10 ">
+        <div className="max-w-7xl mx-auto px-8 py-12">
+          {/* Footer Links */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+            <div className="space-y-3">
+              <p className="text-gray-300 hover:text-white cursor-pointer">
+                About Us
+              </p>
+              <p className="text-gray-300 hover:text-white cursor-pointer">
+                Feedback
+              </p>
+              <p className="text-gray-300 hover:text-white cursor-pointer">
+                Trust, Safety & Security
+              </p>
             </div>
 
-            <div className=" flex flex-col gap-3 cursor-pointer">
-              <p>Help & Support</p>
-              <p>Upwork Foundation</p>
-              <p>Terms of Service</p>
+            <div className="space-y-3">
+              <p className="text-gray-300 hover:text-white cursor-pointer">
+                Help & Support
+              </p>
+              <p className="text-gray-300 hover:text-white cursor-pointer">
+                Upwork Foundation
+              </p>
+              <p className="text-gray-300 hover:text-white cursor-pointer">
+                Terms of Service
+              </p>
             </div>
 
-            <div className="flex flex-col gap-3 cursor-pointer">
-              <p>Privacy Policy</p>
-              <p>CA Notice at Collection</p>
-              <p>Cookie Settings</p>
+            <div className="space-y-3">
+              <p className="text-gray-300 hover:text-white cursor-pointer">
+                Privacy Policy
+              </p>
+              <p className="text-gray-300 hover:text-white cursor-pointer">
+                CA Notice at Collection
+              </p>
+              <p className="text-gray-300 hover:text-white cursor-pointer">
+                Cookie Settings
+              </p>
             </div>
 
-            <div className="flex flex-col gap-3 cursor-pointer">
-              <p>Community</p>
-              <p>Desktop App</p>
-              <p>Cookie Policy</p>
-              <p>Enterprise Policy</p>
+            <div className="space-y-3">
+              <p className="text-gray-300 hover:text-white cursor-pointer">
+                Community
+              </p>
+              <p className="text-gray-300 hover:text-white cursor-pointer">
+                Desktop App
+              </p>
+              <p className="text-gray-300 hover:text-white cursor-pointer">
+                Cookie Policy
+              </p>
+              <p className="text-gray-300 hover:text-white cursor-pointer">
+                Enterprise Policy
+              </p>
             </div>
           </div>
-          <div className="flex justify-between p-4 mt-10">
-            <div className="flex gap-4 ">
-              <p className="text-gray-400">Follow Us</p>
-              <div className="flex gap-4 bg-white rounded-full items-center w-6 h-6 justify-center">
-                <FaFacebookF className="w-4 h-4 text-black " />
-              </div>
-              <div className="flex gap-4 bg-white rounded-md items-center w-6 h-6 justify-center">
-                <FaLinkedinIn className="w-4 h-4 text-black " />
-              </div>
-              <div className="flex gap-4  items-center w-6 h-6 justify-center">
-                <FaXTwitter className="w-4 h-4 text-white " />
-              </div>
-              <div className="flex gap-4   items-center w-6 h-6 justify-center">
-                <FaYoutube className="w-4 h-4 text-white " />
-              </div>
-              <div className="flex gap-4   items-center w-6 h-6 justify-center">
-                <FiInstagram className="w-4 h-4 text-white " />
+
+          {/* Social and Mobile icons */}
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-8 border-b border-gray-800">
+            <div className="flex items-center gap-4">
+              <span className="text-gray-400">Follow Us</span>
+              <div className="flex gap-3">
+                <div className="bg-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-gray-200 cursor-pointer transition">
+                  <FaFacebookF className="w-4 h-4 text-black" />
+                </div>
+                <div className="bg-white rounded w-6 h-6 flex items-center justify-center hover:bg-gray-200 cursor-pointer transition">
+                  <FaLinkedinIn className="w-4 h-4 text-black" />
+                </div>
+                <div className="w-8 h-8 flex items-center justify-center hover:text-gray-300 cursor-pointer transition">
+                  <FaXTwitter className="w-5 h-5 text-white" />
+                </div>
+                <div className="w-8 h-8 flex items-center justify-center hover:text-gray-300 cursor-pointer transition">
+                  <FaYoutube className="w-5 h-5 text-white" />
+                </div>
+                <div className="w-8 h-8 flex items-center justify-center hover:text-gray-300 cursor-pointer transition">
+                  <FiInstagram className="w-5 h-5 text-white" />
+                </div>
               </div>
             </div>
-            <div className="flex gap-4   ">
-              <p className="text-gray-400">Mobile app</p>
-              <div className="flex gap-4  rounded-md items-center w-6 h-6 justify-center">
-                <FaApple className="w-4 h-4 text-white " />
-              </div>
-              <div className="flex gap-4  rounded-md items-center w-6 h-6 justify-center">
-                <TbRobot className="w-4 h-4 text-white " />
+
+            <div className="flex items-center gap-4">
+              <span className="text-gray-400">Mobile app</span>
+              <div className="flex gap-3">
+                <div className="w-8 h-8 flex items-center justify-center hover:text-gray-300 cursor-pointer transition">
+                  <FaApple className="w-5 h-5 text-white" />
+                </div>
+                <div className="w-8 h-8 flex items-center justify-center hover:text-gray-300 cursor-pointer transition">
+                  <TbRobot className="w-5 h-5 text-white" />
+                </div>
               </div>
             </div>
           </div>
-          <div className="max-w-4xl mx-auto mt-5">
-            <div className="border-t border-gray-100 mt-5  "></div>
-          </div>
-          <p className="text-center mt-5 text-gray-200">
-            @ 2015-2025 Upwork Global Inc
+
+          {/* Copyright */}
+          <p className="text-center text-gray-400 text-sm mt-8">
+            © 2015-2025 Upwork® Global Inc.
           </p>
         </div>
       </footer>
-      <div className="bg-gray-600 w-full flex justify-between px-10 py-5 ">
-        {/**upwork */}
-        <div className="flex gap-2">
-          <div className="bg-white rounded-md flex justify-center items-center w-8  h-7 ">
-            <FaUpwork />
+
+      {/* Bottom Bar */}
+      <div className="bg-neutral-800 w-full flex justify-between items-center px-8 py-4">
+        <div className="flex items-center gap-2">
+          <div className="bg-white rounded-md flex justify-center items-center w-8 h-8 shadow-sm">
+            <FaUpwork className="text-black" />
           </div>
-          <p className="text-white">Upwork</p>
+          <span className="font-semibold text-white">Upwork</span>
         </div>
-        {/** */}
-        <div>
-          <p className="text-white ">
-            curated by
-            <span className="font-bold text-2xl"> Mobbin</span>
-          </p>
+
+        <div className="text-white text-sm">
+          curated by{" "}
+          <span className="font-bold text-lg text-white">Mobbin</span>
         </div>
       </div>
     </div>

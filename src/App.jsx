@@ -4,8 +4,8 @@ import VerifyMail from "./Components/VerifyMail";
 const App = () => {
   return (
     <div>
-      <VerifyMail />
-      {/* <Login /> */}
+      {/* <VerifyMail /> */}
+      <Login />
     </div>
   );
 };
