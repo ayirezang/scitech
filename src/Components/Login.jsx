@@ -20,7 +20,7 @@ const Login = () => {
       </nav>
       {/**main section */}
       <main className="p-8 items-center">
-        <div className="max-w-lg mx-auto ">
+        <div className=" w-full max-w-2xl mx-auto ">
           {/**header */}
           <div>
             <p className="text-center font-black text-4xl mb-4">
@@ -28,12 +28,11 @@ const Login = () => {
             </p>
             {/**buttons */}
             <div className="flex gap-4">
-              <button className="  px-9 py-2 flex-1  border border-black flex items-center  justify-center gap-2 rounded-full">
+              <button className="px-10 py-3 flex-1  border border-black flex items-center  justify-center gap-2 rounded-full">
                 <FaApple className="w-6 h-6" />
                 Continue with Apple
               </button>
-              <button className="  px-10 py-2 flex-1    border border-black flex justify-center  gap-2 rounded-full bg-blue-500">
-                {" "}
+              <button className="px-10 py-3 flex-1    border border-black flex justify-center  gap-2 rounded-full bg-blue-500">
                 <img
                   src={googleLogo2}
                   alt="googleLogo"
