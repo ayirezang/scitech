@@ -150,7 +150,7 @@ const VerifyMail = () => {
 
           {/* Copyright */}
           <p className="text-center text-gray-400 text-sm mt-8">
-            © 2015-2025 Upwork® Global Inc.
+            @2015-2025 Upwork@ Global Inc.
           </p>
         </div>
       </footer>
@@ -165,8 +165,7 @@ const VerifyMail = () => {
         </div>
 
         <div className="text-white text-sm">
-          curated by{" "}
-          <span className="font-bold text-lg text-white">Mobbin</span>
+          curated by <span className="font-bold text-2xl ">Mobbin</span>
         </div>
       </div>
     </div>

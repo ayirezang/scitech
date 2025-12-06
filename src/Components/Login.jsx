@@ -33,12 +33,12 @@ const Login = () => {
             {/**buttons */}
             {/**apple icon */}
             <div className="flex gap-4">
-              <button className="px-6 py-3 flex-1  border border-black flex items-center  justify-center gap-2 rounded-full">
+              <button className="px-6 py-3 flex-1  border border-black flex items-center  justify-center gap-2 rounded-full cursor-pointer">
                 <FaApple className="w-6 h-6" />
                 Continue with Apple
               </button>
               {/**google icon */}
-              <button className="px-8 py-2 flex-1   relative rounded-full bg-blue-500">
+              <button className="px-8 py-2 flex-1   relative rounded-full bg-blue-500 cursor-pointer">
                 <div className="absolute left-0 top-1/2 -translate-y-1/2 p-1 bg-white rounded-full  ">
                   <img
                     src={googleLogo}
@@ -178,7 +178,7 @@ const Login = () => {
               </div>
               {/**create account button */}
               <div className="mt-10 flex justify-center">
-                <button className="bg-green-600 text-white px-10 py-2 rounded-lg">
+                <button className="bg-green-600 text-white px-10 py-2 rounded-lg cursor-pointer">
                   Create my account
                 </button>
               </div>
@@ -194,13 +194,13 @@ const Login = () => {
       </main>
       {/**footer */}
       <footer>
-        <div className="bg-neutral-800 w-full flex justify-between px-10 py-5 ">
+        <div className="bg-neutral-800 w-full flex justify-between px-8 py-4 ">
           {/**upwork */}
           <div className="flex gap-2">
-            <div className="bg-white rounded-md flex justify-center items-center w-8  h-7 ">
+            <div className="bg-white rounded-md flex justify-center items-center w-8  h-7 shadow-sm">
               <FaUpwork />
             </div>
-            <p className="text-white">Upwork</p>
+            <p className="text-white font-semibold">Upwork</p>
           </div>
           {/** */}
           <div>
