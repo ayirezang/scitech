@@ -23,8 +23,8 @@ const Login = () => {
         </div>
       </nav>
       {/**main section */}
-      <main className="p-8 items-center">
-        <div className=" w-full max-w-2xl mx-auto  ">
+      <main className="items-center">
+        <div className="w-full max-w-2xl mx-auto">
           {/**header */}
           <div>
             <p className="text-center  text-4xl mb-8">
@@ -38,7 +38,7 @@ const Login = () => {
                 Continue with Apple
               </button>
               {/**google icon */}
-              <button className="px-8 py-2 flex-1   relative rounded-full bg-blue-500 cursor-pointer">
+              <button className="px-8 py-2 flex-1 relative rounded-full bg-blue-500 cursor-pointer">
                 <div className="absolute left-0 top-1/2 -translate-y-1/2 p-1 bg-white rounded-full  ">
                   <img
                     src={googleLogo}
@@ -192,7 +192,7 @@ const Login = () => {
           </form>
         </div>
       </main>
-      {/**footer */}
+      {/*footer */}
       <footer>
         <div className="bg-neutral-800 w-full flex justify-between px-8 py-4 ">
           {/**upwork */}
