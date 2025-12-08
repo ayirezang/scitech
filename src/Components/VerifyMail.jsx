@@ -10,6 +10,7 @@ import { FiInstagram } from "react-icons/fi";
 import { FaApple } from "react-icons/fa";
 import { TbRobot } from "react-icons/tb";
 import { FaUpwork } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const VerifyMail = () => {
   return (
@@ -17,9 +18,9 @@ const VerifyMail = () => {
       {/**navbar */}
       <nav className="flex justify-between items-center pl-4 pr-4">
         {/**upwork logo */}
-        <div>
+        <Link to="/">
           <img src={upworkLogo} alt="upworkLogo" className="w-24" />
-        </div>
+        </Link>
         {/*profile*/}
         <div>
           <CgProfile className="w-8 h-8" />

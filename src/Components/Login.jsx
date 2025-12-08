@@ -5,12 +5,13 @@ import { FaEyeSlash } from "react-icons/fa";
 import { FaApple } from "react-icons/fa";
 import { IoChevronDown } from "react-icons/io5";
 import { FaUpwork } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 const Login = () => {
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-white min-h-screen justify-between  flex flex-col">
       {/**navbar */}
       <nav className="">
-        <div className="flex justify-between items-center px-4 py-4">
+        <div className="flex justify-between items-center px-4 py-2">
           {/**upwork logo */}
           <div className="">
             <img src={upworkLogo} alt="upworkLogo" className="w-24" />
@@ -18,16 +19,18 @@ const Login = () => {
           {/**text */}
           <div className="flex items-center gap-4">
             <p className="font-medium cursor-pointer">Here to hire a talent?</p>
-            <p className="text-green-600 cursor-pointer">Join as a Client</p>
+            <Link to="/verify-mail" className="text-green-600 cursor-pointer">
+              Join as a Client
+            </Link>
           </div>
         </div>
       </nav>
       {/**main section */}
-      <main className="items-center">
-        <div className="w-full max-w-2xl mx-auto">
+      <main className="flex-1 flex items-center justify-center">
+        <div className="w-full max-w-xl mx-auto">
           {/**header */}
           <div>
-            <p className="text-center  text-4xl mb-8">
+            <p className="text-center text-3xl mb-4">
               Sign up to find work you love
             </p>
             {/**buttons */}
@@ -50,7 +53,7 @@ const Login = () => {
               </button>
             </div>
             {/**or */}
-            <div className="flex items-center gap-4 my-10 ">
+            <div className="flex items-center gap-4 my-4 ">
               <div className="border-b border-gray-400 flex-1"></div>
               <p className=" ">or</p>
               <div className="border-b border-gray-400 flex-1 "></div>
@@ -91,7 +94,7 @@ const Login = () => {
               </div>
             </div>
             {/**email */}
-            <div className="my-4">
+            <div className="mt-4">
               <label for="email" className="block mb-1">
                 Email
               </label>
@@ -103,7 +106,7 @@ const Login = () => {
                 placeholder="pat@gmail.com"
               />
             </div>
-            <div className="my-4">
+            <div className="mt-4">
               <label for="password" className="block mb-1">
                 Password
               </label>
@@ -119,82 +122,82 @@ const Login = () => {
                   <FaEyeSlash />
                 </div>
               </div>
-              {/**country */}
-              <div className="my-4">
-                <label for="country" className="block mb-1">
-                  Country
+            </div>
+            {/**country */}
+            <div className="mt-4">
+              <label htmlFor="country" className="block mb-1">
+                Country
+              </label>
+              <div className="relative">
+                <input
+                  type="text"
+                  name="country"
+                  id="country"
+                  className="border px-5 py-3 rounded-lg w-full outline-none border-gray-600"
+                  placeholder="United States"
+                />
+                <div className="absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer">
+                  <IoChevronDown />
+                </div>
+              </div>
+            </div>
+            {/**checkbox 1 */}
+            <div className="flex flex-col gap-5 mt-10">
+              <div className="flex items-start gap-1">
+                <input
+                  type="checkbox"
+                  name="terms"
+                  id="terms"
+                  className="w-5 h-5 text-green-600"
+                />
+                <label htmlFor="terms" className="ml-2 cursor-pointer">
+                  Send me helpful emails to find rewarding work and job leads
                 </label>
-                <div className="relative">
-                  <input
-                    type="text"
-                    name="country"
-                    id="country"
-                    className="border px-5 py-3 rounded-lg w-full outline-none border-gray-600"
-                    placeholder="United States"
-                  />
-                  <div className="absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer">
-                    <IoChevronDown />
-                  </div>
-                </div>
               </div>
-              {/**checkbox 1 */}
-              <div className="flex flex-col gap-5 mt-10">
-                <div className="flex items-start gap-1">
-                  <input
-                    type="checkbox"
-                    name="terms"
-                    id="terms"
-                    className="w-5 h-5 text-green-600"
-                  />
-                  <label htmlFor="terms" className="ml-2 cursor-pointer">
-                    Send me helpful emails to find rewarding work and job leads
-                  </label>
-                </div>
 
-                {/**checkbox 2 */}
-                <div className="flex items-start gap-1">
-                  <input
-                    type="checkbox"
-                    name="terms"
-                    id="terms2"
-                    className="w-5 h-5 text-green-600 flex shrink-0"
-                  />
-                  <label htmlFor="terms" className="ml-2 cursor-pointer">
-                    Yes, I understand and agree to the{" "}
-                    <span className="text-green-600 underline">
-                      Upwork Terms of Service,
-                    </span>{" "}
-                    including the{" "}
-                    <span className="text-green-600 underline">
-                      User Agreement
-                    </span>{" "}
-                    and{" "}
-                    <span className="text-green-600 underline">
-                      Privacy Policy
-                    </span>
-                    .
-                  </label>
-                </div>
+              {/**checkbox 2 */}
+              <div className="flex items-start gap-1">
+                <input
+                  type="checkbox"
+                  name="terms"
+                  id="terms2"
+                  className="w-5 h-5 text-green-600 flex shrink-0"
+                />
+                <label htmlFor="terms" className="ml-2 cursor-pointer">
+                  Yes, I understand and agree to the{" "}
+                  <span className="text-green-600 underline">
+                    Upwork Terms of Service,
+                  </span>{" "}
+                  including the{" "}
+                  <span className="text-green-600 underline">
+                    User Agreement
+                  </span>{" "}
+                  and{" "}
+                  <span className="text-green-600 underline">
+                    Privacy Policy
+                  </span>
+                  .
+                </label>
               </div>
-              {/**create account button */}
-              <div className="mt-10 flex justify-center">
-                <button className="bg-green-600 text-white px-10 py-2 rounded-lg cursor-pointer">
-                  Create my account
-                </button>
-              </div>
-              <div className="mt-5 text-center">
-                <p className="">
-                  Already have an account?{" "}
-                  <span className="text-green-600 cursor-pointer">Log In</span>
-                </p>
-              </div>
+            </div>
+            {/**create account button */}
+            <div className="mt-10 flex justify-center">
+              <button className="bg-green-600 text-white px-10 py-2 rounded-lg cursor-pointer">
+                Create my account
+              </button>
+            </div>
+            <div className="mt-5 text-center">
+              <p className="">
+                Already have an account?{" "}
+                <span className="text-green-600 cursor-pointer">Log In</span>
+              </p>
             </div>
           </form>
         </div>
       </main>
       {/*footer */}
       <footer>
-        <div className="bg-neutral-800 w-full flex justify-between px-8 py-4 ">
+        <div className="bg-neutral-800 w-full flex justify-between px-8 py-4 mt-4 ">
           {/**upwork */}
           <div className="flex gap-2">
             <div className="bg-white rounded-md flex justify-center items-center w-8  h-7 shadow-sm">
