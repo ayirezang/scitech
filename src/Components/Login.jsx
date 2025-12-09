@@ -14,7 +14,7 @@ const Login = () => {
         <div className="flex flex-col   md:flex-row  justify-between items-center px-4 py-2 md:px-6 md:py-3">
           {/**upwork logo */}
           <div>
-            <img src={upworkLogo} alt="upworkLogo" className=" w-16 md:w-24" />
+            <img src={upworkLogo} alt="upworkLogo" className=" w-24 md:w-24" />
           </div>
           {/**text */}
           <div className="text-center md:flex items-center gap-4">
@@ -182,38 +182,22 @@ const Login = () => {
                 </label>
               </div>
             </div>
+
             {/**create account button */}
-            <div className="mt-10 flex justify-center">
-              <button className="bg-green-600 text-white px-10 py-2 rounded-lg cursor-pointer">
-                Create my account
-              </button>
-            </div>
-            <div className="mt-5 text-center">
-              <p className="">
-                Already have an account?{" "}
-                <span className="text-green-600 cursor-pointer">Log In</span>
-              </p>
-            </div>
           </form>
         </div>
       </main>
-      {/*footer */}
-      <footer>
-        <div className="bg-neutral-800 w-full flex justify-between px-8 py-4 mt-4 ">
-          {/**upwork */}
-          <div className="flex gap-2">
-            <div className="bg-white rounded-md flex justify-center items-center w-8  h-7 shadow-sm">
-              <FaUpwork />
-            </div>
-            <p className="text-white font-semibold">Upwork</p>
-          </div>
-          {/** */}
-          <div>
-            <p className="text-white ">
-              curated by
-              <span className="font-bold text-2xl"> Mobbin</span>
-            </p>
-          </div>
+      <footer className="p-5">
+        <div className="mt-10 flex justify-center">
+          <button className="bg-green-600 text-white w-full px-10 py-2  md:w-auto md:px-10 md:py-2 rounded-lg cursor-pointer">
+            Create my account
+          </button>
+        </div>
+        <div className="mt-5  justify-center items-center">
+          <p className="text-center ">
+            Already have an account?{"  "}
+            <span className="text-green-600 cursor-pointer">Log In</span>
+          </p>
         </div>
       </footer>
     </div>
