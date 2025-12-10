@@ -22,9 +22,9 @@ const VerifyMail = () => {
           <img src={upworkLogo} alt="upworkLogo" className="w-24" />
         </Link>
         {/*profile*/}
-        <div>
+        <Link to="/dashboard">
           <CgProfile className="w-8 h-8" />
-        </div>
+        </Link>
       </nav>
       {/**main section */}
       <main>
