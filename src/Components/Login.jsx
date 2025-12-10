@@ -30,14 +30,14 @@ const Login = () => {
         <div className="w-full max-w-xl mx-auto">
           {/**header */}
           <div>
-            <p className="text-center text-2xl md:text-3xl  lg:text-4xl  mb-4">
+            <p className="text-center text-2xl md:text-3xl  lg:text-4xl  mb-4 md:mb-10">
               Sign up to find work you love
             </p>
             {/**buttons */}
             {/**apple icon */}
             <div className="flex flex-col md:flex-row  gap-4">
               <button className="px-4 py-2 md:px-6 md:py-3 flex-1 border border-black flex items-center  justify-center gap-2 rounded-full cursor-pointer">
-                <FaApple className=" w-5 h-5 md:w-6 md:h-6" />
+                <FaApple className=" w-4 h-4 md:w-4 md:h-4" />
                 Continue with Apple
               </button>
               {/**google icon */}
@@ -55,7 +55,7 @@ const Login = () => {
               </button>
             </div>
             {/**or */}
-            <div className="flex items-center gap-4 my-5 md:my-6">
+            <div className="flex items-center gap-4 my-5 md:my-8">
               <div className="border-b border-gray-300 flex-1"></div>
               <p className=" ">or</p>
               <div className="border-b border-gray-300 flex-1 "></div>
@@ -77,7 +77,7 @@ const Login = () => {
                   type="text"
                   name="first name"
                   id="first name"
-                  className="border px-5 py-3 rounded-lg w-full outline-black  border-gray-600 hover:border-black"
+                  className="border px-5 py-3 rounded-lg w-full outline-black  border-gray-600 focus:border-black  hover:outline-black"
                   placeholder="Leonard"
                 />
               </div>
@@ -90,7 +90,7 @@ const Login = () => {
                   type="text"
                   name="first name"
                   id="first name"
-                  className="border px-5 py-3 rounded-lg w-full outline-black border-gray-600  text-black"
+                  className="border px-5 py-3 rounded-lg w-full   outline-black border-gray-600  text-black"
                   placeholder="Kim"
                 />
               </div>
@@ -144,13 +144,13 @@ const Login = () => {
               </div>
             </div>
             {/**checkbox 1 */}
-            <div className="flex flex-col gap-5 mt-10">
-              <div className="flex items-start gap-1">
+            <div className="flex flex-col  gap-5 mt-10">
+              <div className="flex items-start  gap-1">
                 <input
                   type="checkbox"
                   name="terms"
                   id="terms"
-                  className="w-6 h-6 text-green-600"
+                  className="w-6 h-6 md:w-6 md:h-6 text-green-600  flex justify-center  shrink-0"
                 />
                 <label htmlFor="terms" className="ml-2 cursor-pointer">
                   Send me helpful emails to find rewarding work and job leads
@@ -163,7 +163,7 @@ const Login = () => {
                   type="checkbox"
                   name="terms"
                   id="terms2"
-                  className="w-6 h-6 text-green-600 flex shrink-0"
+                  className="w-6 h-6 md:w-6 md:h-6 text-green-600 flex  justify-center shrink-0"
                 />
                 <label htmlFor="terms" className="ml-2 cursor-pointer">
                   Yes, I understand and agree to the{" "}
